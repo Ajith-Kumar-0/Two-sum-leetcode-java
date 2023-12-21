@@ -1,0 +1,21 @@
+class Solution 
+{
+    public boolean isPalindrome(int x)
+    {
+        int rev=0, bal , l=x;
+        while(x > 0)
+        {
+             bal = x % 10;
+             rev =rev * 10 + bal;
+             x =x / 10 ;
+        }
+        if(rev == l)
+        {
+            return true;
+        }
+        else 
+        {
+            return false ;
+        }
+    }
+}
